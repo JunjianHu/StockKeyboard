@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667D76FA1CD1F863001BA0DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D76F91CD1F863001BA0DE /* AppDelegate.swift */; };
+		667D76FC1CD1F863001BA0DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D76FB1CD1F863001BA0DE /* ViewController.swift */; };
+		667D76FF1CD1F863001BA0DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667D76FD1CD1F863001BA0DE /* Main.storyboard */; };
+		667D77011CD1F863001BA0DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667D77001CD1F863001BA0DE /* Assets.xcassets */; };
+		667D77041CD1F863001BA0DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667D77021CD1F863001BA0DE /* LaunchScreen.storyboard */; };
+		667D770C1CD1F8A5001BA0DE /* SRStockNumKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 667D770B1CD1F8A5001BA0DE /* SRStockNumKeyboard.xib */; };
+		667D770E1CD1F8C3001BA0DE /* SRStockSysKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 667D770D1CD1F8C3001BA0DE /* SRStockSysKeyboard.xib */; };
+		667D77101CD1FE96001BA0DE /* SRStockNumKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D770F1CD1FE96001BA0DE /* SRStockNumKeyboard.swift */; };
+		667D77121CD1FEB6001BA0DE /* SRStockSysKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D77111CD1FEB6001BA0DE /* SRStockSysKeyboard.swift */; };
+		667D77141CD1FF51001BA0DE /* SRStockSysKeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D77131CD1FF51001BA0DE /* SRStockSysKeyButton.swift */; };
+		667D77171CD203D9001BA0DE /* keyborad_btn_reverse.png in Resources */ = {isa = PBXBuildFile; fileRef = 667D77151CD203D9001BA0DE /* keyborad_btn_reverse.png */; };
+		667D77181CD203D9001BA0DE /* keyborad_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 667D77161CD203D9001BA0DE /* keyborad_btn.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		667D76F61CD1F863001BA0DE /* SRStockKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRStockKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		667D76F91CD1F863001BA0DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		667D76FB1CD1F863001BA0DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		667D76FE1CD1F863001BA0DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		667D77001CD1F863001BA0DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		667D77031CD1F863001BA0DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		667D77051CD1F863001BA0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667D770B1CD1F8A5001BA0DE /* SRStockNumKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SRStockNumKeyboard.xib; sourceTree = "<group>"; };
+		667D770D1CD1F8C3001BA0DE /* SRStockSysKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SRStockSysKeyboard.xib; sourceTree = "<group>"; };
+		667D770F1CD1FE96001BA0DE /* SRStockNumKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStockNumKeyboard.swift; sourceTree = "<group>"; };
+		667D77111CD1FEB6001BA0DE /* SRStockSysKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStockSysKeyboard.swift; sourceTree = "<group>"; };
+		667D77131CD1FF51001BA0DE /* SRStockSysKeyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStockSysKeyButton.swift; sourceTree = "<group>"; };
+		667D77151CD203D9001BA0DE /* keyborad_btn_reverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyborad_btn_reverse.png; sourceTree = "<group>"; };
+		667D77161CD203D9001BA0DE /* keyborad_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyborad_btn.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		667D76F31CD1F863001BA0DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		667D76ED1CD1F863001BA0DE = {
+			isa = PBXGroup;
+			children = (
+				667D76F81CD1F863001BA0DE /* SRStockKeyboard */,
+				667D76F71CD1F863001BA0DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		667D76F71CD1F863001BA0DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				667D76F61CD1F863001BA0DE /* SRStockKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		667D76F81CD1F863001BA0DE /* SRStockKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				667D77151CD203D9001BA0DE /* keyborad_btn_reverse.png */,
+				667D77161CD203D9001BA0DE /* keyborad_btn.png */,
+				667D76F91CD1F863001BA0DE /* AppDelegate.swift */,
+				667D77001CD1F863001BA0DE /* Assets.xcassets */,
+				667D77051CD1F863001BA0DE /* Info.plist */,
+				667D77021CD1F863001BA0DE /* LaunchScreen.storyboard */,
+				667D76FD1CD1F863001BA0DE /* Main.storyboard */,
+				667D770F1CD1FE96001BA0DE /* SRStockNumKeyboard.swift */,
+				667D770B1CD1F8A5001BA0DE /* SRStockNumKeyboard.xib */,
+				667D77111CD1FEB6001BA0DE /* SRStockSysKeyboard.swift */,
+				667D770D1CD1F8C3001BA0DE /* SRStockSysKeyboard.xib */,
+				667D76FB1CD1F863001BA0DE /* ViewController.swift */,
+				667D77131CD1FF51001BA0DE /* SRStockSysKeyButton.swift */,
+			);
+			path = SRStockKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		667D76F51CD1F863001BA0DE /* SRStockKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667D77081CD1F863001BA0DE /* Build configuration list for PBXNativeTarget "SRStockKeyboard" */;
+			buildPhases = (
+				667D76F21CD1F863001BA0DE /* Sources */,
+				667D76F31CD1F863001BA0DE /* Frameworks */,
+				667D76F41CD1F863001BA0DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SRStockKeyboard;
+			productName = SRStockKeyboard;
+			productReference = 667D76F61CD1F863001BA0DE /* SRStockKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		667D76EE1CD1F863001BA0DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = StockRadar;
+				TargetAttributes = {
+					667D76F51CD1F863001BA0DE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 667D76F11CD1F863001BA0DE /* Build configuration list for PBXProject "SRStockKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 667D76ED1CD1F863001BA0DE;
+			productRefGroup = 667D76F71CD1F863001BA0DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				667D76F51CD1F863001BA0DE /* SRStockKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		667D76F41CD1F863001BA0DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667D770E1CD1F8C3001BA0DE /* SRStockSysKeyboard.xib in Resources */,
+				667D77041CD1F863001BA0DE /* LaunchScreen.storyboard in Resources */,
+				667D770C1CD1F8A5001BA0DE /* SRStockNumKeyboard.xib in Resources */,
+				667D77181CD203D9001BA0DE /* keyborad_btn.png in Resources */,
+				667D77011CD1F863001BA0DE /* Assets.xcassets in Resources */,
+				667D77171CD203D9001BA0DE /* keyborad_btn_reverse.png in Resources */,
+				667D76FF1CD1F863001BA0DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		667D76F21CD1F863001BA0DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667D77121CD1FEB6001BA0DE /* SRStockSysKeyboard.swift in Sources */,
+				667D76FC1CD1F863001BA0DE /* ViewController.swift in Sources */,
+				667D77141CD1FF51001BA0DE /* SRStockSysKeyButton.swift in Sources */,
+				667D76FA1CD1F863001BA0DE /* AppDelegate.swift in Sources */,
+				667D77101CD1FE96001BA0DE /* SRStockNumKeyboard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		667D76FD1CD1F863001BA0DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				667D76FE1CD1F863001BA0DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		667D77021CD1F863001BA0DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				667D77031CD1F863001BA0DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		667D77061CD1F863001BA0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		667D77071CD1F863001BA0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		667D77091CD1F863001BA0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SRStockKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stockradar.SRStockKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		667D770A1CD1F863001BA0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SRStockKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stockradar.SRStockKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		667D76F11CD1F863001BA0DE /* Build configuration list for PBXProject "SRStockKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667D77061CD1F863001BA0DE /* Debug */,
+				667D77071CD1F863001BA0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667D77081CD1F863001BA0DE /* Build configuration list for PBXNativeTarget "SRStockKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667D77091CD1F863001BA0DE /* Debug */,
+				667D770A1CD1F863001BA0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 667D76EE1CD1F863001BA0DE /* Project object */;
+}

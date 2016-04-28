@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SRStockSysKeyboard" customModule="SRStockKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV0-Ef-z6b" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="51" height="138"/>
+                    <state key="normal" title="Q" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="XmY-if-EXu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-b3-HYT" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="67" y="8" width="51" height="138"/>
+                    <state key="normal" title="W" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" title="W" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="7Pz-OM-Y5O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-k2-b2J" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="126" y="8" width="52" height="138"/>
+                    <state key="normal" title="E" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" title="E" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="L9b-fv-Prj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3q-nF-u1W" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="186" y="8" width="51" height="138"/>
+                    <state key="normal" title="R" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="GL7-nz-NKs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxF-J4-59T" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="245" y="8" width="51" height="138"/>
+                    <state key="normal" title="T" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="oNE-A2-odq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhj-FA-Bbh" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="304" y="8" width="51" height="138"/>
+                    <state key="normal" title="Y" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="hUM-eT-X5k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaT-RC-qwe" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="363" y="8" width="51" height="138"/>
+                    <state key="normal" title="U" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="aci-2Y-ct3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEe-mV-3qi" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="422" y="8" width="52" height="138"/>
+                    <state key="normal" title="I" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="r9P-ME-CL7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-0B-Imp" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="482" y="8" width="51" height="138"/>
+                    <state key="normal" title="O" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="2ra-6u-F9g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuu-jx-HYL" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="541" y="8" width="51" height="138"/>
+                    <state key="normal" title="P" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="IF5-Z9-qPw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzw-Nz-4E9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="38" y="156" width="51" height="138"/>
+                    <state key="normal" title="A" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0yL-0D-qnd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMi-HX-Zp3" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="97" y="156" width="51" height="138"/>
+                    <state key="normal" title="S" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="imn-4I-C4l"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwY-2m-Rxy" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="156" y="156" width="51" height="138"/>
+                    <state key="normal" title="D" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="EeL-0p-eNB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2Q-3e-y7J" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="215" y="156" width="51" height="138"/>
+                    <state key="normal" title="F" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qdl-DJ-HNu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-oq-hE9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="274" y="156" width="52" height="138"/>
+                    <state key="normal" title="G" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="w4S-NO-z5O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-tb-XLm" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="334" y="156" width="51" height="138"/>
+                    <state key="normal" title="H" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kij-QF-ccO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFi-Lv-rBs" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="452" y="156" width="51" height="138"/>
+                    <state key="normal" title="K" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="vRw-a1-bO2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2f-Jq-LxB" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="511" y="156" width="51" height="138"/>
+                    <state key="normal" title="L" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="DYq-Eh-pgL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rm3-qT-Kqr" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="155" y="304" width="52" height="138"/>
+                    <state key="normal" title="X" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="MkY-oK-Lxw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilf-wK-GW9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="215" y="304" width="51" height="138"/>
+                    <state key="normal" title="C" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="6dm-qu-EfJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiF-Wa-ehv" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="274" y="304" width="52" height="138"/>
+                    <state key="normal" title="V" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zqe-Wc-00g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt8-d4-0UV" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="334" y="304" width="51" height="138"/>
+                    <state key="normal" title="B" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="5zF-be-8JZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGq-BS-Yn6" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="393" y="304" width="51" height="138"/>
+                    <state key="normal" title="N" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="g8d-i2-Tze"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAW-OF-0oo" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="452" y="304" width="51" height="138"/>
+                    <state key="normal" title="M" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ey2-oe-Q3P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrS-37-d2U" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="96" y="304" width="51" height="138"/>
+                    <state key="normal" title="Z" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="cmF-Hp-BbS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkr-wB-jZV" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="304" width="77" height="138"/>
+                    <state key="normal" title="清" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clearPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="GEr-bR-9PW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHW-xg-G5Q" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="120" y="452" width="360" height="138"/>
+                    <state key="normal" title="SPACE" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="spacePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ps8-yV-x4Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEE-fa-Osp" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="515" y="304" width="77" height="138"/>
+                    <state key="normal" title="删" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="disabled" title="删"/>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="deletePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="tpj-ix-EGj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMD-mj-MUL" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="452" width="102" height="138"/>
+                    <state key="normal" title="123" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="changeKeyboardPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="2KA-Ym-YZu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec2-bU-Sx4" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="490" y="452" width="102" height="138"/>
+                    <state key="normal" title="搜索" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="searchPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="pPI-hH-PXm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMb-jS-g0a" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="393" y="156" width="51" height="138"/>
+                    <state key="normal" title="J" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="keyborad_btn_reverse.png"/>
+                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <state key="focused" backgroundImage="keyborad_btn_reverse.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowYOffset">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowXOffset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ry9-zW-eCU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.81960784313725488" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="lLl-0B-Imp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="01b-Ia-tH8"/>
+                <constraint firstItem="IaT-RC-qwe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="0EG-ka-8p4"/>
+                <constraint firstItem="Rm3-qT-Kqr" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="0aH-rG-Rr5"/>
+                <constraint firstItem="WzP-b3-HYT" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="0bK-QI-d8O"/>
+                <constraint firstAttribute="trailing" secondItem="Fuu-jx-HYL" secondAttribute="trailing" constant="8" id="0bU-0D-YS2"/>
+                <constraint firstItem="ec2-bU-Sx4" firstAttribute="centerY" secondItem="NMD-mj-MUL" secondAttribute="centerY" id="1kd-eG-8lf"/>
+                <constraint firstItem="NiF-Wa-ehv" firstAttribute="leading" secondItem="Ilf-wK-GW9" secondAttribute="trailing" constant="8" id="1qc-ps-LNy"/>
+                <constraint firstItem="MMb-jS-g0a" firstAttribute="top" secondItem="IaT-RC-qwe" secondAttribute="bottom" constant="10" id="2Tk-Lz-ppO"/>
+                <constraint firstItem="gkr-wB-jZV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="48" id="2Zy-Td-QJD"/>
+                <constraint firstItem="gkr-wB-jZV" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="3D7-jh-HIR"/>
+                <constraint firstItem="lEe-mV-3qi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="3dt-bt-0xV"/>
+                <constraint firstItem="Rm3-qT-Kqr" firstAttribute="width" secondItem="l2Q-3e-y7J" secondAttribute="width" constant="1" id="4P4-YY-DJT"/>
+                <constraint firstItem="gt8-d4-0UV" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="51Q-xU-5UW"/>
+                <constraint firstItem="wwY-2m-Rxy" firstAttribute="leading" secondItem="jMi-HX-Zp3" secondAttribute="trailing" constant="8" id="6Dc-CM-Axi"/>
+                <constraint firstItem="IHW-xg-G5Q" firstAttribute="leading" secondItem="NMD-mj-MUL" secondAttribute="trailing" constant="10" id="6XX-qU-Uxv"/>
+                <constraint firstItem="5ko-oq-hE9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7CH-fW-dLS"/>
+                <constraint firstItem="d3q-nF-u1W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="7QT-lH-r6Q"/>
+                <constraint firstItem="gkr-wB-jZV" firstAttribute="top" secondItem="jMi-HX-Zp3" secondAttribute="bottom" constant="10" id="7XA-Q8-ec1"/>
+                <constraint firstItem="jMi-HX-Zp3" firstAttribute="leading" secondItem="tzw-Nz-4E9" secondAttribute="trailing" constant="8" id="7dS-IP-yKC"/>
+                <constraint firstItem="qxF-J4-59T" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="7tZ-zE-eQ1"/>
+                <constraint firstItem="NMD-mj-MUL" firstAttribute="height" secondItem="gkr-wB-jZV" secondAttribute="height" id="831-Ct-ENh"/>
+                <constraint firstItem="nhj-FA-Bbh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="8Ts-9x-k3u"/>
+                <constraint firstItem="IGq-BS-Yn6" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="8u1-8r-Awf"/>
+                <constraint firstItem="gkr-wB-jZV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="916-99-E0x"/>
+                <constraint firstItem="TrS-37-d2U" firstAttribute="leading" secondItem="gkr-wB-jZV" secondAttribute="trailing" constant="17" id="9Xu-0n-coB"/>
+                <constraint firstItem="RFi-Lv-rBs" firstAttribute="leading" secondItem="MMb-jS-g0a" secondAttribute="trailing" constant="8" id="9jy-Rg-SXC"/>
+                <constraint firstItem="nhj-FA-Bbh" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="A43-IV-9oS"/>
+                <constraint firstItem="lEe-mV-3qi" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="Abr-8y-5b1"/>
+                <constraint firstItem="IaT-RC-qwe" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="Awf-nQ-wFS"/>
+                <constraint firstItem="gkr-wB-jZV" firstAttribute="top" secondItem="tzw-Nz-4E9" secondAttribute="bottom" constant="10" id="BXN-4R-n4v"/>
+                <constraint firstItem="Fuu-jx-HYL" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="BXp-di-fnK"/>
+                <constraint firstItem="IaT-RC-qwe" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="Bb7-IU-hOY"/>
+                <constraint firstItem="ec2-bU-Sx4" firstAttribute="height" secondItem="NMD-mj-MUL" secondAttribute="height" id="Bk0-dC-xf4"/>
+                <constraint firstItem="gt8-d4-0UV" firstAttribute="leading" secondItem="NiF-Wa-ehv" secondAttribute="trailing" constant="8" id="DPb-0X-gHb"/>
+                <constraint firstItem="IGq-BS-Yn6" firstAttribute="leading" secondItem="gt8-d4-0UV" secondAttribute="trailing" constant="17" id="DVC-e9-tLT"/>
+                <constraint firstItem="l2Q-3e-y7J" firstAttribute="top" secondItem="qxF-J4-59T" secondAttribute="bottom" constant="10" id="DnM-em-orf"/>
+                <constraint firstItem="TrS-37-d2U" firstAttribute="top" secondItem="jMi-HX-Zp3" secondAttribute="bottom" constant="10" id="Do6-pN-ZhP"/>
+                <constraint firstItem="IHW-xg-G5Q" firstAttribute="centerY" secondItem="NMD-mj-MUL" secondAttribute="centerY" id="E43-Rl-Tsr"/>
+                <constraint firstItem="hBi-k2-b2J" firstAttribute="leading" secondItem="WzP-b3-HYT" secondAttribute="trailing" constant="8" id="Eua-HA-YGg"/>
+                <constraint firstItem="5ko-oq-hE9" firstAttribute="leading" secondItem="l2Q-3e-y7J" secondAttribute="trailing" constant="8" id="FfQ-uY-U3b"/>
+                <constraint firstItem="RFi-Lv-rBs" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="Gsv-2a-Yqs"/>
+                <constraint firstItem="lEe-mV-3qi" firstAttribute="leading" secondItem="IaT-RC-qwe" secondAttribute="trailing" constant="8" id="Gux-pI-MTi"/>
+                <constraint firstItem="WzP-b3-HYT" firstAttribute="leading" secondItem="pV0-Ef-z6b" secondAttribute="trailing" constant="8" id="HKd-z6-7D1"/>
+                <constraint firstItem="IGq-BS-Yn6" firstAttribute="width" secondItem="l2Q-3e-y7J" secondAttribute="width" id="Ixf-Lx-dKb"/>
+                <constraint firstItem="mEE-fa-Osp" firstAttribute="top" secondItem="h2f-Jq-LxB" secondAttribute="bottom" constant="10" id="JLU-I8-D6m"/>
+                <constraint firstItem="MMb-jS-g0a" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="Jhp-Jb-qt9"/>
+                <constraint firstItem="l2Q-3e-y7J" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="JlJ-Zp-nOr"/>
+                <constraint firstItem="gt8-d4-0UV" firstAttribute="width" secondItem="l2Q-3e-y7J" secondAttribute="width" id="K2W-mC-h1E"/>
+                <constraint firstItem="NiF-Wa-ehv" firstAttribute="width" secondItem="l2Q-3e-y7J" secondAttribute="width" id="KKJ-lB-wtY"/>
+                <constraint firstItem="gkr-wB-jZV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="KQi-MA-F0S"/>
+                <constraint firstItem="wAW-OF-0oo" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="KmW-ty-cfW"/>
+                <constraint firstItem="NiF-Wa-ehv" firstAttribute="leading" secondItem="Ilf-wK-GW9" secondAttribute="trailing" constant="18" id="KpG-Bz-70l"/>
+                <constraint firstItem="Ilf-wK-GW9" firstAttribute="leading" secondItem="Rm3-qT-Kqr" secondAttribute="trailing" constant="8" id="M6g-cf-ppW"/>
+                <constraint firstItem="lLl-0B-Imp" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="M8S-96-sU8"/>
+                <constraint firstItem="tzw-Nz-4E9" firstAttribute="top" secondItem="hBi-k2-b2J" secondAttribute="bottom" constant="10" id="Niq-aG-MmA"/>
+                <constraint firstItem="Rm3-qT-Kqr" firstAttribute="top" secondItem="wwY-2m-Rxy" secondAttribute="bottom" constant="10" id="Nv4-dy-egE"/>
+                <constraint firstItem="Sbe-tb-XLm" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="O3g-Pr-waj"/>
+                <constraint firstItem="Sbe-tb-XLm" firstAttribute="top" secondItem="nhj-FA-Bbh" secondAttribute="bottom" constant="10" id="O7Q-ke-f7l"/>
+                <constraint firstItem="NiF-Wa-ehv" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="P1L-5w-Vt1"/>
+                <constraint firstItem="nhj-FA-Bbh" firstAttribute="leading" secondItem="qxF-J4-59T" secondAttribute="trailing" constant="8" id="PGr-mD-H8f"/>
+                <constraint firstItem="wwY-2m-Rxy" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="RBh-kn-IGb"/>
+                <constraint firstItem="wAW-OF-0oo" firstAttribute="leading" secondItem="IGq-BS-Yn6" secondAttribute="trailing" constant="8" id="RcY-98-CvM"/>
+                <constraint firstItem="WzP-b3-HYT" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="T94-89-tGd"/>
+                <constraint firstItem="lLl-0B-Imp" firstAttribute="leading" secondItem="lEe-mV-3qi" secondAttribute="trailing" constant="8" id="Th3-mh-1H4"/>
+                <constraint firstItem="IaT-RC-qwe" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="U2v-JN-uLF"/>
+                <constraint firstItem="l2Q-3e-y7J" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="U39-5C-TKW"/>
+                <constraint firstItem="wwY-2m-Rxy" firstAttribute="top" secondItem="d3q-nF-u1W" secondAttribute="bottom" constant="10" id="UHF-E9-K7w"/>
+                <constraint firstItem="hBi-k2-b2J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Uid-PI-xCg"/>
+                <constraint firstItem="wwY-2m-Rxy" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="Umn-vR-jeI"/>
+                <constraint firstItem="l2Q-3e-y7J" firstAttribute="leading" secondItem="wwY-2m-Rxy" secondAttribute="trailing" constant="8" id="V4I-8Z-cr5"/>
+                <constraint firstItem="IGq-BS-Yn6" firstAttribute="leading" secondItem="gt8-d4-0UV" secondAttribute="trailing" constant="8" id="VFY-tA-XeZ"/>
+                <constraint firstItem="Ilf-wK-GW9" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="VsM-uH-XRR"/>
+                <constraint firstItem="h2f-Jq-LxB" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="W5d-Om-TuA"/>
+                <constraint firstItem="wAW-OF-0oo" firstAttribute="top" secondItem="MMb-jS-g0a" secondAttribute="bottom" constant="10" id="WsG-wV-jgn"/>
+                <constraint firstItem="RFi-Lv-rBs" firstAttribute="top" secondItem="lEe-mV-3qi" secondAttribute="bottom" constant="10" id="Wv6-5j-SWF"/>
+                <constraint firstItem="jMi-HX-Zp3" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="Xhe-lS-ggw"/>
+                <constraint firstItem="qxF-J4-59T" firstAttribute="leading" secondItem="d3q-nF-u1W" secondAttribute="trailing" constant="8" id="Z5D-XB-JFB"/>
+                <constraint firstItem="NiF-Wa-ehv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZSR-Sw-Kck"/>
+                <constraint firstItem="MMb-jS-g0a" firstAttribute="leading" secondItem="Sbe-tb-XLm" secondAttribute="trailing" constant="8" id="ZXr-VF-W7T"/>
+                <constraint firstItem="Rm3-qT-Kqr" firstAttribute="leading" secondItem="TrS-37-d2U" secondAttribute="trailing" constant="8" id="ahf-4f-4aS"/>
+                <constraint firstItem="wAW-OF-0oo" firstAttribute="leading" secondItem="IGq-BS-Yn6" secondAttribute="trailing" constant="8" id="ajw-mo-TVc"/>
+                <constraint firstItem="TrS-37-d2U" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="bGW-S7-WL3"/>
+                <constraint firstItem="tzw-Nz-4E9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="biI-j2-RJQ"/>
+                <constraint firstItem="gkr-wB-jZV" firstAttribute="top" secondItem="tzw-Nz-4E9" secondAttribute="bottom" constant="10" id="bsy-V9-9hg"/>
+                <constraint firstItem="NiF-Wa-ehv" firstAttribute="top" secondItem="5ko-oq-hE9" secondAttribute="bottom" constant="10" id="bvc-cG-jxM"/>
+                <constraint firstItem="IaT-RC-qwe" firstAttribute="leading" secondItem="nhj-FA-Bbh" secondAttribute="trailing" constant="8" id="cCX-gu-b41"/>
+                <constraint firstAttribute="bottom" secondItem="NMD-mj-MUL" secondAttribute="bottom" constant="10" id="ciW-Zd-UfC"/>
+                <constraint firstItem="Ilf-wK-GW9" firstAttribute="leading" secondItem="Rm3-qT-Kqr" secondAttribute="trailing" constant="8" id="cnJ-88-W80"/>
+                <constraint firstItem="d3q-nF-u1W" firstAttribute="leading" secondItem="hBi-k2-b2J" secondAttribute="trailing" constant="8" id="dzx-xF-1aW"/>
+                <constraint firstItem="h2f-Jq-LxB" firstAttribute="top" secondItem="lEe-mV-3qi" secondAttribute="bottom" constant="10" id="ekO-fi-CBN"/>
+                <constraint firstItem="hBi-k2-b2J" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="epc-wD-EAw"/>
+                <constraint firstItem="RFi-Lv-rBs" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="fNe-I1-5S1"/>
+                <constraint firstItem="mEE-fa-Osp" firstAttribute="height" secondItem="l2Q-3e-y7J" secondAttribute="height" id="fdb-Lk-9jl"/>
+                <constraint firstAttribute="trailing" secondItem="ec2-bU-Sx4" secondAttribute="trailing" constant="8" id="fqf-qa-LHT"/>
+                <constraint firstAttribute="trailing" secondItem="mEE-fa-Osp" secondAttribute="trailing" constant="8" id="fx2-H9-MDY"/>
+                <constraint firstItem="Fuu-jx-HYL" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="gVd-TF-ml3"/>
+                <constraint firstItem="d3q-nF-u1W" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="hFF-em-NL5"/>
+                <constraint firstItem="TrS-37-d2U" firstAttribute="width" secondItem="l2Q-3e-y7J" secondAttribute="width" id="hSu-L6-qHe"/>
+                <constraint firstItem="NMD-mj-MUL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="iOs-aM-o8K"/>
+                <constraint firstItem="nhj-FA-Bbh" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="iSp-O3-fDb"/>
+                <constraint firstItem="5ko-oq-hE9" firstAttribute="top" secondItem="nhj-FA-Bbh" secondAttribute="bottom" constant="10" id="jpj-UI-zyC"/>
+                <constraint firstItem="IHW-xg-G5Q" firstAttribute="height" secondItem="NMD-mj-MUL" secondAttribute="height" id="kRv-mb-gqb"/>
+                <constraint firstItem="d3q-nF-u1W" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="kSO-kl-qYh"/>
+                <constraint firstItem="IGq-BS-Yn6" firstAttribute="top" secondItem="Sbe-tb-XLm" secondAttribute="bottom" constant="10" id="kpL-qV-3YO"/>
+                <constraint firstItem="gt8-d4-0UV" firstAttribute="top" secondItem="Sbe-tb-XLm" secondAttribute="bottom" constant="10" id="lq8-lo-f7z"/>
+                <constraint firstItem="gt8-d4-0UV" firstAttribute="leading" secondItem="NiF-Wa-ehv" secondAttribute="trailing" constant="8" id="m8U-p1-zEZ"/>
+                <constraint firstItem="ec2-bU-Sx4" firstAttribute="leading" secondItem="IHW-xg-G5Q" secondAttribute="trailing" constant="10" id="m8g-ju-2iZ"/>
+                <constraint firstItem="5ko-oq-hE9" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="mO1-Zy-BRH"/>
+                <constraint firstItem="pV0-Ef-z6b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="mPN-bF-fqx"/>
+                <constraint firstItem="qxF-J4-59T" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="mwr-Gm-IwQ"/>
+                <constraint firstItem="Ilf-wK-GW9" firstAttribute="width" secondItem="l2Q-3e-y7J" secondAttribute="width" id="nMe-TI-qy7"/>
+                <constraint firstItem="Ilf-wK-GW9" firstAttribute="top" secondItem="l2Q-3e-y7J" secondAttribute="bottom" constant="10" id="nRe-JU-bi0"/>
+                <constraint firstItem="l2Q-3e-y7J" firstAttribute="leading" secondItem="wwY-2m-Rxy" secondAttribute="trailing" constant="8" id="nZP-KG-Cdj"/>
+                <constraint firstItem="MMb-jS-g0a" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="nhC-SW-T58"/>
+                <constraint firstItem="Fuu-jx-HYL" firstAttribute="leading" secondItem="lLl-0B-Imp" secondAttribute="trailing" constant="8" id="opH-57-hR7"/>
+                <constraint firstItem="jMi-HX-Zp3" firstAttribute="top" secondItem="hBi-k2-b2J" secondAttribute="bottom" constant="10" id="pEc-kR-JM2"/>
+                <constraint firstItem="Fuu-jx-HYL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="pe0-oi-7gL"/>
+                <constraint firstItem="h2f-Jq-LxB" firstAttribute="leading" secondItem="RFi-Lv-rBs" secondAttribute="trailing" constant="8" id="ph2-gj-ACb"/>
+                <constraint firstItem="IaT-RC-qwe" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="pv7-l2-xHj"/>
+                <constraint firstItem="jMi-HX-Zp3" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="sCQ-6S-ShP"/>
+                <constraint firstItem="pV0-Ef-z6b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="sV3-Lz-ebi"/>
+                <constraint firstItem="TrS-37-d2U" firstAttribute="leading" secondItem="gkr-wB-jZV" secondAttribute="trailing" constant="11" id="t1M-5Q-kEe"/>
+                <constraint firstItem="NMD-mj-MUL" firstAttribute="top" secondItem="gkr-wB-jZV" secondAttribute="bottom" constant="10" id="tfx-8I-ffz"/>
+                <constraint firstItem="Rm3-qT-Kqr" firstAttribute="leading" secondItem="TrS-37-d2U" secondAttribute="trailing" constant="29" id="ts7-6O-hGS"/>
+                <constraint firstItem="qxF-J4-59T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="tuL-Uy-vJf"/>
+                <constraint firstItem="h2f-Jq-LxB" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="uQa-ZL-vkp"/>
+                <constraint firstItem="mEE-fa-Osp" firstAttribute="leading" secondItem="wAW-OF-0oo" secondAttribute="trailing" constant="12" id="ufQ-TV-KlH"/>
+                <constraint firstItem="WzP-b3-HYT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="vOs-Oy-mAw"/>
+                <constraint firstItem="Sbe-tb-XLm" firstAttribute="leading" secondItem="5ko-oq-hE9" secondAttribute="trailing" constant="8" id="vUJ-xr-b6v"/>
+                <constraint firstItem="lEe-mV-3qi" firstAttribute="height" secondItem="pV0-Ef-z6b" secondAttribute="height" id="wE6-bv-KOb"/>
+                <constraint firstItem="wAW-OF-0oo" firstAttribute="width" secondItem="l2Q-3e-y7J" secondAttribute="width" id="wJr-u0-s10"/>
+                <constraint firstItem="IHW-xg-G5Q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wjt-05-il1"/>
+                <constraint firstItem="hBi-k2-b2J" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="wsn-rx-yog"/>
+                <constraint firstItem="IHW-xg-G5Q" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="xXN-JR-NEP"/>
+                <constraint firstItem="l2Q-3e-y7J" firstAttribute="top" secondItem="d3q-nF-u1W" secondAttribute="bottom" constant="10" id="xvs-Hc-WOG"/>
+                <constraint firstItem="lLl-0B-Imp" firstAttribute="width" secondItem="pV0-Ef-z6b" secondAttribute="width" id="xxq-HE-QKw"/>
+                <constraint firstItem="5ko-oq-hE9" firstAttribute="height" secondItem="tzw-Nz-4E9" secondAttribute="height" id="zw3-Pl-CT5"/>
+                <constraint firstItem="Sbe-tb-XLm" firstAttribute="width" secondItem="tzw-Nz-4E9" secondAttribute="width" id="zzB-zl-H6m"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="biI-j2-RJQ"/>
+                    <exclude reference="2Zy-Td-QJD"/>
+                    <exclude reference="KQi-MA-F0S"/>
+                    <exclude reference="9Xu-0n-coB"/>
+                    <exclude reference="ts7-6O-hGS"/>
+                    <exclude reference="KpG-Bz-70l"/>
+                    <exclude reference="DVC-e9-tLT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="515" y="436"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="keyborad_btn.png" width="227" height="144"/>
+        <image name="keyborad_btn_reverse.png" width="227" height="144"/>
+    </resources>
+</document>
