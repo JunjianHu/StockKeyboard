@@ -30,10 +30,17 @@ class SRStockKeyboard: UIView, SRStockKeyboardDelegate {
             static var keyboard : SRStockKeyboard?
         }
         dispatch_once(&Singleton.token) {
-//            let windowFrame = UIApplication.sharedApplication().keyWindow?.bounds
-//            Singleton.keyboard = SRStockKeyboard(frame: CGRectZero)
+            let window = UIApplication.sharedApplication().windows[0]
+            let windowFrame = window.bounds
+            Singleton.keyboard = SRStockKeyboard(frame: CGRectMake(0, (windowFrame.size.height)-216, (windowFrame.size.width), 216))
         }
         return Singleton.keyboard
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        charKeyboard?.frame = self.bounds
+        numKeyboard?.frame = self.bounds
     }
     
     override init(frame: CGRect) {
@@ -81,7 +88,7 @@ class SRStockKeyboard: UIView, SRStockKeyboardDelegate {
         targetTextField!.text = ""
     }
     func searchDidPressed() {
-        
+        targetTextField?.resignFirstResponder()
     }
     
     func deleteDidPressed() {

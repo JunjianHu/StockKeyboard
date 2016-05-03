@@ -8,12 +8,13 @@
 
 import UIKit
 
-let kCharKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "600", "601", "000", "002", "300"]
+let kCharKeys = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 class SRStockSysKeyboard: UIView {
     
     var  delegate : SRStockKeyboardDelegate?
     
+    @IBOutlet var charButtons: [SRStockSysKeyButton]!
     
     class func sharedSysKeyboard()->SRStockSysKeyboard?{
         struct Singleton{

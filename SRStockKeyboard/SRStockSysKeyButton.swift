@@ -14,17 +14,7 @@ class SRStockSysKeyButton: UIButton {
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
-            layer.masksToBounds = cornerRadius > 0
-        }
-    }
-    @IBInspectable var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
-    @IBInspectable var borderColor: UIColor? {
-        didSet {
-            layer.borderColor = borderColor?.CGColor
+//            layer.masksToBounds = cornerRadius > 0
         }
     }
     @IBInspectable var shadowColor: UIColor? {
@@ -34,22 +24,31 @@ class SRStockSysKeyButton: UIButton {
     }
     @IBInspectable var shadowOpacity: CGFloat = 0 {
         didSet {
-            layer.shadowOpacity = Float(shadowOpacity)
+            layer.shadowOpacity = 0.5
         }
     }
-    @IBInspectable var shadowYOffset: CGFloat = 0 {
+    @IBInspectable var shadowOffset: CGSize = CGSizeZero {
         didSet {
-            var shadowSize = layer.shadowOffset;
-            shadowSize.height = shadowYOffset;
-            layer.shadowOffset = shadowSize;
+            layer.shadowOffset = shadowOffset;
+        }
+    }
+    @IBInspectable var shadowRadius: CGFloat = 0 {
+        didSet{
+            layer.shadowRadius = shadowRadius
         }
     }
     
-    @IBInspectable var shadowXOffset: CGFloat = 0 {
-        didSet {
-            var shadowSize = layer.shadowOffset;
-            shadowSize.width = shadowXOffset;
-            layer.shadowOffset = shadowSize;
-        }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        super.touchesBegan(touches, withEvent: event)
+        self.backgroundColor = self.backgroundColor?.colorWithAlphaComponent(0.8)
     }
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        super.touchesEnded(touches, withEvent: event)
+        self.backgroundColor = self.backgroundColor?.colorWithAlphaComponent(1.0)
+    }
+    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+        super.touchesCancelled(touches, withEvent: event)
+        self.backgroundColor = self.backgroundColor?.colorWithAlphaComponent(1.0)
+    }
+    
 }

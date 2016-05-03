@@ -17,6 +17,15 @@ class ViewController: UIViewController {
         
         textField.inputView = SRStockKeyboard.sharedInstance()
         
+//        let button = UIButton(type:.Custom)
+//        button.frame = CGRectMake(30, 20, 300, 80)
+//        button.setTitle("dengl", forState: UIControlState.Normal)
+//        button.backgroundColor = UIColor.blueColor()
+//        button.layer.cornerRadius = 10
+//        button.layer.shadowOffset = CGSizeMake(2, 2)
+//        button.layer.shadowOpacity = 0.8
+//        button.layer.shadowColor = UIColor.blackColor().CGColor
+//        self.view.addSubview(button)
     }
 
     override func didReceiveMemoryWarning() {
