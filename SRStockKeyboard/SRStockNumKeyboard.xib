@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,7 +11,410 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SRStockNumKeyboard" customModule="SRStockKeyboard" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSA-9m-HKK" customClass="SRStockVerticalView" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="110" height="584"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhZ-Y5-Bd9">
+                            <rect key="frame" x="0.0" y="0.0" width="110" height="117"/>
+                            <state key="normal" title="600">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="oS9-8i-nkx"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOD-t6-NyV" userLabel="600-601">
+                            <rect key="frame" x="5" y="117" width="101" height="1"/>
+                            <color key="backgroundColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="xUc-h4-lbX"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MC-Fd-UK5">
+                            <rect key="frame" x="0.0" y="117" width="110" height="117"/>
+                            <state key="normal" title="601">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="rMM-ld-x3g"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThM-Zl-Gwy" userLabel="601-000">
+                            <rect key="frame" x="4" y="234" width="101" height="1"/>
+                            <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Tto-Au-Xus"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt8-md-EKq">
+                            <rect key="frame" x="0.0" y="234" width="110" height="116"/>
+                            <state key="normal" title="000">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Amn-wK-tjc"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azv-cM-V0J" userLabel="02-03">
+                            <rect key="frame" x="4" y="467" width="101" height="1"/>
+                            <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="tdR-oW-xKT"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZa-3j-ElM">
+                            <rect key="frame" x="0.0" y="467" width="110" height="117"/>
+                            <state key="normal" title="003">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="HdS-Ms-Mbg"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmF-SD-ZRf" userLabel="00-02">
+                            <rect key="frame" x="5" y="350" width="100" height="1"/>
+                            <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="fOa-dE-axi"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cth-bb-sD2">
+                            <rect key="frame" x="0.0" y="350" width="110" height="117"/>
+                            <state key="normal" title="002">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="j5I-fl-IgA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.85490196078431369" green="0.85882352941176465" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Cth-bb-sD2" firstAttribute="height" secondItem="mhZ-Y5-Bd9" secondAttribute="height" id="2ET-X7-vub"/>
+                        <constraint firstItem="wOD-t6-NyV" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" constant="5" id="8Jq-Dg-89e"/>
+                        <constraint firstItem="mhZ-Y5-Bd9" firstAttribute="top" secondItem="xSA-9m-HKK" secondAttribute="top" id="EJi-7z-tjf"/>
+                        <constraint firstAttribute="trailing" secondItem="azv-cM-V0J" secondAttribute="trailing" constant="5" id="FBZ-VU-n3D"/>
+                        <constraint firstItem="azv-cM-V0J" firstAttribute="top" secondItem="Cth-bb-sD2" secondAttribute="bottom" id="FG4-wu-EdM"/>
+                        <constraint firstItem="jt8-md-EKq" firstAttribute="width" secondItem="xSA-9m-HKK" secondAttribute="width" id="G4E-HB-2L2"/>
+                        <constraint firstAttribute="trailing" secondItem="ThM-Zl-Gwy" secondAttribute="trailing" constant="5" id="HGy-kV-fqx"/>
+                        <constraint firstItem="iZa-3j-ElM" firstAttribute="height" secondItem="mhZ-Y5-Bd9" secondAttribute="height" id="JQD-FX-6IM"/>
+                        <constraint firstItem="mhZ-Y5-Bd9" firstAttribute="width" secondItem="xSA-9m-HKK" secondAttribute="width" id="KVx-fg-T6n"/>
+                        <constraint firstItem="3MC-Fd-UK5" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" id="M0h-Uc-u1o"/>
+                        <constraint firstItem="Cth-bb-sD2" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" id="M9c-yL-q7s"/>
+                        <constraint firstItem="mhZ-Y5-Bd9" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" id="NhL-Hm-GUJ"/>
+                        <constraint firstItem="jt8-md-EKq" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" id="O9m-TL-Hmy"/>
+                        <constraint firstItem="wOD-t6-NyV" firstAttribute="top" secondItem="mhZ-Y5-Bd9" secondAttribute="bottom" id="P0I-yL-uJ7"/>
+                        <constraint firstItem="azv-cM-V0J" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" constant="4" id="Qh6-s4-u2M"/>
+                        <constraint firstAttribute="trailing" secondItem="vmF-SD-ZRf" secondAttribute="trailing" constant="5" id="RkP-Lk-85z"/>
+                        <constraint firstItem="ThM-Zl-Gwy" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" constant="4" id="Tu2-53-qTt"/>
+                        <constraint firstItem="jt8-md-EKq" firstAttribute="top" secondItem="3MC-Fd-UK5" secondAttribute="bottom" id="Vjs-TR-eNb"/>
+                        <constraint firstItem="jt8-md-EKq" firstAttribute="height" secondItem="mhZ-Y5-Bd9" secondAttribute="height" id="VmK-6x-1ao"/>
+                        <constraint firstItem="iZa-3j-ElM" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" id="XSM-oC-gd1"/>
+                        <constraint firstItem="3MC-Fd-UK5" firstAttribute="width" secondItem="xSA-9m-HKK" secondAttribute="width" id="XrA-P3-rtl"/>
+                        <constraint firstItem="3MC-Fd-UK5" firstAttribute="top" secondItem="mhZ-Y5-Bd9" secondAttribute="bottom" id="YeZ-JJ-1Pc"/>
+                        <constraint firstItem="Cth-bb-sD2" firstAttribute="top" secondItem="jt8-md-EKq" secondAttribute="bottom" id="Yz5-wc-9MK"/>
+                        <constraint firstItem="Cth-bb-sD2" firstAttribute="width" secondItem="xSA-9m-HKK" secondAttribute="width" id="Z4R-cs-ah2"/>
+                        <constraint firstItem="iZa-3j-ElM" firstAttribute="top" secondItem="Cth-bb-sD2" secondAttribute="bottom" id="ZWk-4c-sgp"/>
+                        <constraint firstItem="iZa-3j-ElM" firstAttribute="width" secondItem="xSA-9m-HKK" secondAttribute="width" id="a5d-CD-EGM"/>
+                        <constraint firstItem="mhZ-Y5-Bd9" firstAttribute="top" secondItem="xSA-9m-HKK" secondAttribute="top" id="aQe-bS-k0t"/>
+                        <constraint firstItem="vmF-SD-ZRf" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="leading" constant="5" id="avF-P0-cU0"/>
+                        <constraint firstAttribute="trailing" secondItem="wOD-t6-NyV" secondAttribute="trailing" constant="4" id="bxs-uN-6gz"/>
+                        <constraint firstAttribute="bottom" secondItem="iZa-3j-ElM" secondAttribute="bottom" id="iwE-mq-VAw"/>
+                        <constraint firstItem="3MC-Fd-UK5" firstAttribute="height" secondItem="mhZ-Y5-Bd9" secondAttribute="height" id="lZD-Km-8Fz"/>
+                        <constraint firstItem="ThM-Zl-Gwy" firstAttribute="top" secondItem="3MC-Fd-UK5" secondAttribute="bottom" id="net-Um-GjR"/>
+                        <constraint firstItem="vmF-SD-ZRf" firstAttribute="top" secondItem="Cth-bb-sD2" secondAttribute="top" id="xWY-lH-pxT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTv-dG-3k4" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="245" y="452" width="229" height="140"/>
+                    <state key="normal" title="0" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="tx7-Xd-6Og"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeu-KT-PjT" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="126" y="8" width="111" height="140"/>
+                    <state key="normal" title="1" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="cxU-xh-6sz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-9b-NdZ" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="245" y="8" width="110" height="140"/>
+                    <state key="normal" title="2" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="5PZ-LM-ckl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meO-qI-rj5" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="363" y="8" width="111" height="140"/>
+                    <state key="normal" title="3" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="cC5-yt-aVS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwc-pH-DMg" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="126" y="156" width="111" height="140"/>
+                    <state key="normal" title="4" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="itN-Lo-13C"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xab-fX-SHK" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="245" y="156" width="110" height="140"/>
+                    <state key="normal" title="5" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mok-lU-iY5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXB-cn-FhB" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="363" y="156" width="111" height="140"/>
+                    <state key="normal" title="6" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Eem-FM-fHG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlt-wC-c9V" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="126" y="304" width="111" height="140"/>
+                    <state key="normal" title="7" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="oIh-e2-kkk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrl-Uh-b5W" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="245" y="304" width="110" height="140"/>
+                    <state key="normal" title="8" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="KGU-qG-tpW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXZ-W7-wcF" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="363" y="304" width="111" height="140"/>
+                    <state key="normal" title="9" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="NVs-nh-c5p"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl8-AR-ZBN" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="482" y="8" width="110" height="140"/>
+                    <state key="normal" title="DEL" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="deleteDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kin-kl-ogC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPZ-Fn-3ya" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="482" y="156" width="110" height="140"/>
+                    <state key="normal" title="隐藏" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="hideDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="T0B-i2-Qee"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ere-P9-6rH" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="482" y="304" width="110" height="140"/>
+                    <state key="normal" title="清空" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clearDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="58Y-bA-Qa0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ys3-O7-XzN" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="126" y="452" width="111" height="140"/>
+                    <state key="normal" title="ABC" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="changeKeyboard:" destination="iN0-l3-epB" eventType="touchUpInside" id="odC-us-Xz5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shr-JI-bP9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="482" y="452" width="110" height="140"/>
+                    <state key="normal" title="确定" backgroundImage="keyborad_btn.png">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="okDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Shd-za-Vbp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.58431372549019611" green="0.59607843137254901" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="TPZ-Fn-3ya" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="0dT-hY-hqr"/>
+                <constraint firstItem="GXB-cn-FhB" firstAttribute="top" secondItem="meO-qI-rj5" secondAttribute="bottom" constant="8" id="198-uO-fdg"/>
+                <constraint firstItem="cTv-dG-3k4" firstAttribute="leading" secondItem="Ys3-O7-XzN" secondAttribute="trailing" constant="8" id="1VL-c8-nEM"/>
+                <constraint firstItem="GXB-cn-FhB" firstAttribute="leading" secondItem="Xab-fX-SHK" secondAttribute="trailing" constant="8" id="3AY-iu-BII"/>
+                <constraint firstItem="rrl-Uh-b5W" firstAttribute="leading" secondItem="zlt-wC-c9V" secondAttribute="trailing" constant="8" id="3w2-OW-IUg"/>
+                <constraint firstItem="Jl8-AR-ZBN" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="5Pq-d8-XZH"/>
+                <constraint firstItem="meO-qI-rj5" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="5e4-SQ-rpI"/>
+                <constraint firstItem="Ys3-O7-XzN" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="6nm-Jb-ucw"/>
+                <constraint firstItem="Lwc-pH-DMg" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="7BF-9b-Ou6"/>
+                <constraint firstItem="ere-P9-6rH" firstAttribute="leading" secondItem="WXZ-W7-wcF" secondAttribute="trailing" constant="8" id="8Rm-38-jjb"/>
+                <constraint firstItem="cTv-dG-3k4" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="8dw-Rc-h2z"/>
+                <constraint firstItem="WXZ-W7-wcF" firstAttribute="top" secondItem="GXB-cn-FhB" secondAttribute="bottom" constant="8" id="BSR-Um-BmQ"/>
+                <constraint firstItem="TPZ-Fn-3ya" firstAttribute="leading" secondItem="GXB-cn-FhB" secondAttribute="trailing" constant="8" id="Bci-WA-2ar"/>
+                <constraint firstItem="zlt-wC-c9V" firstAttribute="top" secondItem="Lwc-pH-DMg" secondAttribute="bottom" constant="8" id="E5p-zS-dG3"/>
+                <constraint firstAttribute="trailing" secondItem="ere-P9-6rH" secondAttribute="trailing" constant="8" id="FFY-gx-Bzn"/>
+                <constraint firstItem="TPZ-Fn-3ya" firstAttribute="top" secondItem="Jl8-AR-ZBN" secondAttribute="bottom" constant="8" id="GmW-fe-Xfw"/>
+                <constraint firstItem="cTv-dG-3k4" firstAttribute="top" secondItem="WXZ-W7-wcF" secondAttribute="bottom" constant="8" id="HvO-cc-JA5"/>
+                <constraint firstItem="GXB-cn-FhB" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="IJ6-K9-ihT"/>
+                <constraint firstItem="Ys3-O7-XzN" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="trailing" constant="8" id="IaT-yS-J34"/>
+                <constraint firstItem="CPJ-9b-NdZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="K3S-HR-TbG"/>
+                <constraint firstItem="Xab-fX-SHK" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="LIA-AH-xsA"/>
+                <constraint firstItem="Lwc-pH-DMg" firstAttribute="top" secondItem="oeu-KT-PjT" secondAttribute="bottom" constant="8" id="M1f-eV-MS6"/>
+                <constraint firstItem="Jl8-AR-ZBN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Opp-mS-y3G"/>
+                <constraint firstItem="xSA-9m-HKK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="QFa-kd-wxo"/>
+                <constraint firstItem="ere-P9-6rH" firstAttribute="top" secondItem="TPZ-Fn-3ya" secondAttribute="bottom" constant="8" id="R1d-y4-LFl"/>
+                <constraint firstItem="zlt-wC-c9V" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="T1q-iv-2VX"/>
+                <constraint firstItem="rrl-Uh-b5W" firstAttribute="top" secondItem="Xab-fX-SHK" secondAttribute="bottom" constant="8" id="TaW-ZO-CO0"/>
+                <constraint firstItem="zlt-wC-c9V" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="URy-fp-J0U"/>
+                <constraint firstItem="CPJ-9b-NdZ" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="VwH-YP-eAY"/>
+                <constraint firstAttribute="bottom" secondItem="shr-JI-bP9" secondAttribute="bottom" constant="8" id="WYy-0X-88R"/>
+                <constraint firstAttribute="trailing" secondItem="TPZ-Fn-3ya" secondAttribute="trailing" constant="8" id="Wur-aF-Pos"/>
+                <constraint firstItem="Xab-fX-SHK" firstAttribute="top" secondItem="CPJ-9b-NdZ" secondAttribute="bottom" constant="8" id="Y5y-zn-aQm"/>
+                <constraint firstItem="oeu-KT-PjT" firstAttribute="width" secondItem="xSA-9m-HKK" secondAttribute="width" id="Z3k-Ee-YaD"/>
+                <constraint firstItem="GXB-cn-FhB" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="ZP7-Fh-h5n"/>
+                <constraint firstItem="Lwc-pH-DMg" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="Zpf-fA-oom"/>
+                <constraint firstAttribute="bottom" secondItem="xSA-9m-HKK" secondAttribute="bottom" constant="8" id="a95-PW-04B"/>
+                <constraint firstAttribute="bottom" secondItem="cTv-dG-3k4" secondAttribute="bottom" constant="8" id="aEb-aW-sVz"/>
+                <constraint firstItem="ere-P9-6rH" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="aX7-ft-04k"/>
+                <constraint firstItem="WXZ-W7-wcF" firstAttribute="leading" secondItem="rrl-Uh-b5W" secondAttribute="trailing" constant="8" id="ahc-Ai-59P"/>
+                <constraint firstItem="Jl8-AR-ZBN" firstAttribute="leading" secondItem="meO-qI-rj5" secondAttribute="trailing" constant="8" id="bBo-JJ-K4U"/>
+                <constraint firstItem="Lwc-pH-DMg" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="trailing" constant="8" id="cNR-B6-Uh1"/>
+                <constraint firstItem="Jl8-AR-ZBN" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="e7w-xv-6lw"/>
+                <constraint firstItem="TPZ-Fn-3ya" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="eEI-El-biL"/>
+                <constraint firstItem="Xab-fX-SHK" firstAttribute="leading" secondItem="Lwc-pH-DMg" secondAttribute="trailing" constant="8" id="eba-De-UQz"/>
+                <constraint firstItem="Ys3-O7-XzN" firstAttribute="top" secondItem="zlt-wC-c9V" secondAttribute="bottom" constant="8" id="ehE-76-7IK"/>
+                <constraint firstItem="CPJ-9b-NdZ" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="fEe-zL-f5p"/>
+                <constraint firstItem="cTv-dG-3k4" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" multiplier="2" constant="8" id="fF9-h3-CuT"/>
+                <constraint firstItem="shr-JI-bP9" firstAttribute="top" secondItem="ere-P9-6rH" secondAttribute="bottom" constant="8" id="h5g-oT-Diq"/>
+                <constraint firstItem="Ys3-O7-XzN" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="jMY-Ey-KlJ"/>
+                <constraint firstItem="rrl-Uh-b5W" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="lAd-xx-Tdr"/>
+                <constraint firstItem="oeu-KT-PjT" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="trailing" constant="8" id="lWx-II-kyT"/>
+                <constraint firstItem="Xab-fX-SHK" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="mR1-Jm-RJB"/>
+                <constraint firstItem="shr-JI-bP9" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="oDR-oU-wWG"/>
+                <constraint firstItem="xSA-9m-HKK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="oZ8-Jj-yHO"/>
+                <constraint firstAttribute="bottom" secondItem="Ys3-O7-XzN" secondAttribute="bottom" constant="8" id="p8Y-Lf-HY9"/>
+                <constraint firstItem="meO-qI-rj5" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="ptk-nS-gQN"/>
+                <constraint firstItem="meO-qI-rj5" firstAttribute="leading" secondItem="CPJ-9b-NdZ" secondAttribute="trailing" constant="8" id="pwT-KA-He1"/>
+                <constraint firstItem="meO-qI-rj5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="pyo-Ga-YVk"/>
+                <constraint firstItem="shr-JI-bP9" firstAttribute="leading" secondItem="cTv-dG-3k4" secondAttribute="trailing" constant="8" id="qjk-E0-A3S"/>
+                <constraint firstItem="rrl-Uh-b5W" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="s3Q-Xt-h7b"/>
+                <constraint firstItem="WXZ-W7-wcF" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="sfh-Ch-b2W"/>
+                <constraint firstItem="WXZ-W7-wcF" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="tpq-ku-fMb"/>
+                <constraint firstItem="CPJ-9b-NdZ" firstAttribute="leading" secondItem="oeu-KT-PjT" secondAttribute="trailing" constant="8" id="tzV-NN-vqA"/>
+                <constraint firstItem="zlt-wC-c9V" firstAttribute="leading" secondItem="xSA-9m-HKK" secondAttribute="trailing" constant="8" id="vEi-j1-lVU"/>
+                <constraint firstItem="ere-P9-6rH" firstAttribute="width" secondItem="oeu-KT-PjT" secondAttribute="width" id="wB7-uB-tu1"/>
+                <constraint firstItem="shr-JI-bP9" firstAttribute="height" secondItem="oeu-KT-PjT" secondAttribute="height" id="wXK-GV-3j4"/>
+                <constraint firstItem="oeu-KT-PjT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="xG0-Zg-gRV"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="keyborad_btn.png" width="227" height="144"/>
+    </resources>
 </document>

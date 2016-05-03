@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        textField.inputView = SRStockSysKeyboard.sharedSysKeyboard()
+        textField.inputView = SRStockKeyboard.sharedInstance()
         
     }
 

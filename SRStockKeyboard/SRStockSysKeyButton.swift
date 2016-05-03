@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class SRStockSysKeyButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
