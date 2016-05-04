@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV0-Ef-z6b" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV0-Ef-z6b" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="8" y="8" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Q">
@@ -43,7 +43,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="XmY-if-EXu"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-b3-HYT" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-b3-HYT" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="67" y="8" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="W">
@@ -74,7 +74,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="7Pz-OM-Y5O"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-k2-b2J" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-k2-b2J" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="126" y="8" width="52" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="E">
@@ -105,7 +105,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="L9b-fv-Prj"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3q-nF-u1W" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="17" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3q-nF-u1W" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="186" y="8" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="R">
@@ -136,7 +136,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="GL7-nz-NKs"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxF-J4-59T" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="19" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxF-J4-59T" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="245" y="8" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="T">
@@ -167,7 +167,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="oNE-A2-odq"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhj-FA-Bbh" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="24" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhj-FA-Bbh" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="304" y="8" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Y">
@@ -198,7 +198,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="hUM-eT-X5k"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaT-RC-qwe" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaT-RC-qwe" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="363" y="8" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="U">
@@ -229,7 +229,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="aci-2Y-ct3"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEe-mV-3qi" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEe-mV-3qi" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="422" y="8" width="52" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="I">
@@ -260,7 +260,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="r9P-ME-CL7"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-0B-Imp" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-0B-Imp" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="482" y="8" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="O">
@@ -291,7 +291,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="2ra-6u-F9g"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuu-jx-HYL" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuu-jx-HYL" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="541" y="8" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="P">
@@ -322,7 +322,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="IF5-Z9-qPw"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzw-Nz-4E9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzw-Nz-4E9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="38" y="156" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="A">
@@ -353,7 +353,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0yL-0D-qnd"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMi-HX-Zp3" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="18" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMi-HX-Zp3" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="97" y="156" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="S">
@@ -384,7 +384,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="imn-4I-C4l"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwY-2m-Rxy" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwY-2m-Rxy" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="156" y="156" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="D">
@@ -415,7 +415,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="EeL-0p-eNB"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2Q-3e-y7J" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2Q-3e-y7J" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="215" y="156" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="F">
@@ -446,7 +446,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qdl-DJ-HNu"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-oq-hE9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-oq-hE9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="274" y="156" width="52" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="G">
@@ -477,7 +477,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="w4S-NO-z5O"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-tb-XLm" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-tb-XLm" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="334" y="156" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="H">
@@ -508,7 +508,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kij-QF-ccO"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMb-jS-g0a" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMb-jS-g0a" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="393" y="156" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="J">
@@ -539,7 +539,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ry9-zW-eCU"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFi-Lv-rBs" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFi-Lv-rBs" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="452" y="156" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="K">
@@ -570,7 +570,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="vRw-a1-bO2"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2f-Jq-LxB" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2f-Jq-LxB" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="511" y="156" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="L">
@@ -601,7 +601,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="DYq-Eh-pgL"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rm3-qT-Kqr" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rm3-qT-Kqr" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="155" y="304" width="52" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="X">
@@ -632,7 +632,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="MkY-oK-Lxw"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilf-wK-GW9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilf-wK-GW9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="215" y="304" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="C">
@@ -663,7 +663,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="6dm-qu-EfJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="21" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiF-Wa-ehv" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiF-Wa-ehv" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="274" y="304" width="52" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="V">
@@ -694,7 +694,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zqe-Wc-00g"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt8-d4-0UV" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt8-d4-0UV" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="334" y="304" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="B">
@@ -725,7 +725,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="5zF-be-8JZ"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGq-BS-Yn6" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGq-BS-Yn6" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="393" y="304" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="N">
@@ -756,7 +756,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="g8d-i2-Tze"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAW-OF-0oo" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAW-OF-0oo" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="452" y="304" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="M">
@@ -787,7 +787,7 @@
                         <action selector="characterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ey2-oe-Q3P"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrS-37-d2U" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                <button opaque="NO" userInteractionEnabled="NO" tag="25" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrS-37-d2U" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="96" y="304" width="51" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Z">
@@ -1138,7 +1138,6 @@
                 <outletCollection property="charButtons" destination="IaT-RC-qwe" collectionClass="NSMutableArray" id="ECN-zv-Ser"/>
                 <outletCollection property="charButtons" destination="lEe-mV-3qi" collectionClass="NSMutableArray" id="vR0-8O-ro6"/>
                 <outletCollection property="charButtons" destination="lLl-0B-Imp" collectionClass="NSMutableArray" id="DdN-7W-xYt"/>
-                <outletCollection property="charButtons" destination="Fuu-jx-HYL" collectionClass="NSMutableArray" id="vqI-N7-CtC"/>
                 <outletCollection property="charButtons" destination="tzw-Nz-4E9" collectionClass="NSMutableArray" id="fbI-dc-J1A"/>
                 <outletCollection property="charButtons" destination="jMi-HX-Zp3" collectionClass="NSMutableArray" id="EKH-ry-H7V"/>
                 <outletCollection property="charButtons" destination="wwY-2m-Rxy" collectionClass="NSMutableArray" id="MBa-va-YxL"/>

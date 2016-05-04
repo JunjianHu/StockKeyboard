@@ -12,11 +12,12 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSA-9m-HKK" customClass="SRStockVerticalView" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="8" y="8" width="110.5" height="584"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSA-9m-HKK" customClass="SRStockVerticalView" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="111" height="584"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhZ-Y5-Bd9">
-                            <rect key="frame" x="0.0" y="0.0" width="110.5" height="117"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhZ-Y5-Bd9">
+                            <rect key="frame" x="0.0" y="0.0" width="111" height="117"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <state key="normal" title="600">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
@@ -24,15 +25,16 @@
                                 <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="oS9-8i-nkx"/>
                             </connections>
                         </button>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOD-t6-NyV" userLabel="600-601">
-                            <rect key="frame" x="5" y="117" width="101.5" height="1"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOD-t6-NyV" userLabel="600-601">
+                            <rect key="frame" x="5" y="117" width="102" height="1"/>
                             <color key="backgroundColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="xUc-h4-lbX"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MC-Fd-UK5">
-                            <rect key="frame" x="0.0" y="117" width="110.5" height="116.5"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MC-Fd-UK5">
+                            <rect key="frame" x="0.0" y="117" width="111" height="117"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <state key="normal" title="601">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
@@ -40,15 +42,16 @@
                                 <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="rMM-ld-x3g"/>
                             </connections>
                         </button>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThM-Zl-Gwy" userLabel="601-000">
-                            <rect key="frame" x="4" y="233" width="101.5" height="1"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ThM-Zl-Gwy" userLabel="601-000">
+                            <rect key="frame" x="4" y="233" width="102" height="1"/>
                             <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Tto-Au-Xus"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt8-md-EKq">
-                            <rect key="frame" x="0.0" y="233.5" width="110.5" height="117"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt8-md-EKq">
+                            <rect key="frame" x="0.0" y="234" width="111" height="117"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <state key="normal" title="000">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
@@ -56,15 +59,16 @@
                                 <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Amn-wK-tjc"/>
                             </connections>
                         </button>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azv-cM-V0J" userLabel="02-03">
-                            <rect key="frame" x="4" y="467" width="101.5" height="1"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azv-cM-V0J" userLabel="02-03">
+                            <rect key="frame" x="4" y="467" width="102" height="1"/>
                             <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="tdR-oW-xKT"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZa-3j-ElM">
-                            <rect key="frame" x="0.0" y="467" width="110.5" height="117"/>
+                        <button opaque="NO" tag="14" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZa-3j-ElM">
+                            <rect key="frame" x="0.0" y="467" width="111" height="117"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <state key="normal" title="003">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
@@ -72,15 +76,16 @@
                                 <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="HdS-Ms-Mbg"/>
                             </connections>
                         </button>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmF-SD-ZRf" userLabel="00-02">
-                            <rect key="frame" x="5" y="350" width="100.5" height="1"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmF-SD-ZRf" userLabel="00-02">
+                            <rect key="frame" x="5" y="350" width="101" height="1"/>
                             <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="fOa-dE-axi"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cth-bb-sD2">
-                            <rect key="frame" x="0.0" y="350" width="110.5" height="116.5"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cth-bb-sD2">
+                            <rect key="frame" x="0.0" y="350" width="111" height="117"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <state key="normal" title="002">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
@@ -132,11 +137,12 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTv-dG-3k4" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="245" y="452" width="228.5" height="140"/>
-                    <state key="normal" title="0" backgroundImage="keyborad_btn.png">
+                    <rect key="frame" x="245" y="452" width="229" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="0">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -147,11 +153,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeu-KT-PjT" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="126" y="8" width="110.5" height="140"/>
-                    <state key="normal" title="1" backgroundImage="keyborad_btn.png">
+                    <rect key="frame" x="126" y="8" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="1">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -163,10 +170,11 @@
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-9b-NdZ" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="245" y="8" width="110" height="140"/>
-                    <state key="normal" title="2" backgroundImage="keyborad_btn.png">
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="2">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -177,11 +185,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meO-qI-rj5" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="363" y="8" width="110.5" height="140"/>
-                    <state key="normal" title="3" backgroundImage="keyborad_btn.png">
+                    <rect key="frame" x="363" y="8" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="3">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -192,11 +201,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwc-pH-DMg" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="126" y="156" width="110.5" height="140"/>
-                    <state key="normal" title="4" backgroundImage="keyborad_btn.png">
+                    <rect key="frame" x="126" y="156" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="4">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -208,10 +218,11 @@
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xab-fX-SHK" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="245" y="156" width="110" height="140"/>
-                    <state key="normal" title="5" backgroundImage="keyborad_btn.png">
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="5">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -222,11 +233,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXB-cn-FhB" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="363" y="156" width="110.5" height="140"/>
-                    <state key="normal" title="6" backgroundImage="keyborad_btn.png">
+                    <rect key="frame" x="363" y="156" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="6">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -237,11 +249,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlt-wC-c9V" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="126" y="304" width="110.5" height="140"/>
-                    <state key="normal" title="7" backgroundImage="keyborad_btn.png">
+                    <rect key="frame" x="126" y="304" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="7">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -253,10 +266,11 @@
                 </button>
                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrl-Uh-b5W" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
                     <rect key="frame" x="245" y="304" width="110" height="140"/>
-                    <state key="normal" title="8" backgroundImage="keyborad_btn.png">
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="8">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -267,11 +281,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXZ-W7-wcF" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="363" y="304" width="110.5" height="140"/>
-                    <state key="normal" title="9" backgroundImage="keyborad_btn.png">
+                    <rect key="frame" x="363" y="304" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="9">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn_reverse.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -281,9 +296,10 @@
                         <action selector="keyDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="NVs-nh-c5p"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl8-AR-ZBN" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="481" y="8" width="110.5" height="140"/>
-                    <state key="normal" title="DEL" backgroundImage="keyborad_btn.png">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl8-AR-ZBN" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="481" y="8" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <state key="normal" title="DEL">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -295,9 +311,10 @@
                         <action selector="deleteDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kin-kl-ogC"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPZ-Fn-3ya" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="481" y="156" width="110.5" height="140"/>
-                    <state key="normal" title="隐藏" backgroundImage="keyborad_btn.png">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPZ-Fn-3ya" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="481" y="156" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <state key="normal" title="隐藏">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -309,9 +326,10 @@
                         <action selector="hideDidPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="T0B-i2-Qee"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ere-P9-6rH" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="481" y="304" width="110.5" height="140"/>
-                    <state key="normal" title="清空" backgroundImage="keyborad_btn.png">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ere-P9-6rH" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="481" y="304" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <state key="normal" title="清空">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -324,11 +342,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ys3-O7-XzN" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="126" y="452" width="110.5" height="140"/>
-                    <state key="normal" title="ABC" backgroundImage="keyborad_btn_reverse.png">
+                    <rect key="frame" x="126" y="452" width="111" height="140"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <state key="normal" title="ABC">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
-                    <state key="highlighted" backgroundImage="keyborad_btn.png"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
@@ -338,10 +356,14 @@
                         <action selector="changeKeyboard:" destination="iN0-l3-epB" eventType="touchUpInside" id="odC-us-Xz5"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shr-JI-bP9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="481" y="452" width="110.5" height="140"/>
-                    <state key="normal" title="确定" backgroundImage="keyborad_btn.png">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shr-JI-bP9" customClass="SRStockSysKeyButton" customModule="SRStockKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="481" y="452" width="111" height="140"/>
+                    <color key="backgroundColor" red="0.050980392156862744" green="0.21176470588235294" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="focused">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -425,8 +447,4 @@
             </constraints>
         </view>
     </objects>
-    <resources>
-        <image name="keyborad_btn.png" width="227" height="144"/>
-        <image name="keyborad_btn_reverse.png" width="227" height="144"/>
-    </resources>
 </document>

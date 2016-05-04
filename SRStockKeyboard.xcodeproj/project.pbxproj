@@ -18,8 +18,6 @@
 		667D77101CD1FE96001BA0DE /* SRStockNumKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D770F1CD1FE96001BA0DE /* SRStockNumKeyboard.swift */; };
 		667D77121CD1FEB6001BA0DE /* SRStockSysKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D77111CD1FEB6001BA0DE /* SRStockSysKeyboard.swift */; };
 		667D77141CD1FF51001BA0DE /* SRStockSysKeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D77131CD1FF51001BA0DE /* SRStockSysKeyButton.swift */; };
-		667D77171CD203D9001BA0DE /* keyborad_btn_reverse.png in Resources */ = {isa = PBXBuildFile; fileRef = 667D77151CD203D9001BA0DE /* keyborad_btn_reverse.png */; };
-		667D77181CD203D9001BA0DE /* keyborad_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 667D77161CD203D9001BA0DE /* keyborad_btn.png */; };
 		669D033D1CD8742200E5E4D9 /* SRStockVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D033C1CD8742200E5E4D9 /* SRStockVerticalView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +35,6 @@
 		667D770F1CD1FE96001BA0DE /* SRStockNumKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStockNumKeyboard.swift; sourceTree = "<group>"; };
 		667D77111CD1FEB6001BA0DE /* SRStockSysKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStockSysKeyboard.swift; sourceTree = "<group>"; };
 		667D77131CD1FF51001BA0DE /* SRStockSysKeyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStockSysKeyButton.swift; sourceTree = "<group>"; };
-		667D77151CD203D9001BA0DE /* keyborad_btn_reverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyborad_btn_reverse.png; sourceTree = "<group>"; };
-		667D77161CD203D9001BA0DE /* keyborad_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyborad_btn.png; sourceTree = "<group>"; };
 		669D033C1CD8742200E5E4D9 /* SRStockVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStockVerticalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +68,6 @@
 		667D76F81CD1F863001BA0DE /* SRStockKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				667D77151CD203D9001BA0DE /* keyborad_btn_reverse.png */,
-				667D77161CD203D9001BA0DE /* keyborad_btn.png */,
 				667D76F91CD1F863001BA0DE /* AppDelegate.swift */,
 				667D77001CD1F863001BA0DE /* Assets.xcassets */,
 				667D77051CD1F863001BA0DE /* Info.plist */,
@@ -152,9 +146,7 @@
 				667D770E1CD1F8C3001BA0DE /* SRStockSysKeyboard.xib in Resources */,
 				667D77041CD1F863001BA0DE /* LaunchScreen.storyboard in Resources */,
 				667D770C1CD1F8A5001BA0DE /* SRStockNumKeyboard.xib in Resources */,
-				667D77181CD203D9001BA0DE /* keyborad_btn.png in Resources */,
 				667D77011CD1F863001BA0DE /* Assets.xcassets in Resources */,
-				667D77171CD203D9001BA0DE /* keyborad_btn_reverse.png in Resources */,
 				667D76FF1CD1F863001BA0DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
