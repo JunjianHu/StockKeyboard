@@ -90,14 +90,34 @@ class SRStockSysKeyboard: UIView {
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         super.touchesEnded(touches, withEvent: event)
+        let button = self.buttonOnTouch(touches)
+        if button != nil {
+            self.characterPressed(button!)
+        }
+        self.removeKeyPop()
     }
     
     override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
         super.touchesCancelled(touches, withEvent: event)
+        self.removeKeyPop()
     }
     
+    func removeKeyPop() {
+        if keyPop != nil {
+            keyPop?.removeFromSuperview()
+            keyPop = nil
+        }
+    }
     
     func touchOnButton(touches: Set<UITouch>) {
+        let button = self.buttonOnTouch(touches)
+        if button == nil {
+            return
+        }
+        self.addPopupToButton(button)
+    }
+    
+    func buttonOnTouch(touches: Set<UITouch>) -> UIButton? {
         let touch = touches.first
         let point = touch?.locationInView(self)
         var button: UIButton?
@@ -107,24 +127,20 @@ class SRStockSysKeyboard: UIView {
                 break
             }
         }
-        if button == nil {
-            return
-        }
-        self.addPopupToButton(button)
+        return button
     }
     
     func addPopupToButton(button : UIButton?) {
         if keyPop?.tag == button?.tag {
             return
         }
-        keyPop?.removeFromSuperview()
-        keyPop = nil
+        self .removeKeyPop()
         
         let textLabel = UILabel()
         
-        if button?.tag == 0 {
+        if button?.tag == 15 {
             keyPop = self.createKeyPopImageWithType(KeyPopType.Right, withRect:button?.frame)
-        }else if button?.tag == 9 {
+        }else if button?.tag == 16 {
             keyPop = self.createKeyPopImageWithType(KeyPopType.Left, withRect:button?.frame)
         }else {
             keyPop = self.createKeyPopImageWithType(KeyPopType.Normal, withRect:button?.frame)
@@ -134,12 +150,13 @@ class SRStockSysKeyboard: UIView {
         textLabel.textAlignment = .Center
         textLabel.backgroundColor = UIColor.clearColor()
         textLabel.font = UIFont.systemFontOfSize(44)
+        textLabel.frame = CGRectMake(0, 0, (keyPop?.frame.size.width)!, 70)
         
-        keyPop?.layer.shadowColor = UIColor.whiteColor().colorWithAlphaComponent(1.0).CGColor
-        keyPop?.layer.shadowOffset = CGSizeMake(0, 3.0)
-        keyPop?.layer.shadowOpacity = 1
-        keyPop?.layer.shadowRadius = 5.0
-        keyPop?.clipsToBounds = true
+//        keyPop?.layer.shadowColor = UIColor.whiteColor().colorWithAlphaComponent(1.0).CGColor
+//        keyPop?.layer.shadowOffset = CGSizeMake(0, 2.0)
+//        keyPop?.layer.shadowOpacity = 1
+//        keyPop?.layer.shadowRadius = 1.0
+//        keyPop?.clipsToBounds = true
         
         keyPop?.addSubview(textLabel)
         keyPop?.tag = 1
@@ -147,41 +164,88 @@ class SRStockSysKeyboard: UIView {
     }
     
     func createKeyPopImageWithType(type:KeyPopType, withRect rect:CGRect?) -> UIImageView {
-        
         let path = CGPathCreateMutable()
         var point = CGPointZero
-       
-        let radius: CGFloat = 5.0
-        let topWith : CGFloat = (rect?.size.width)! * 1.3
-        let upperHeight : CGFloat = 56.0
-        let lowerHeight : CGFloat = 37.0
         
-        point.x += radius
-        CGPathMoveToPoint(path, nil, point.x, point.y)
-        point.x += topWith
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
+        let radius: CGFloat = 10.0
+        let topWith : CGFloat = (rect?.size.width)! * 1.4
+        let upperHeight : CGFloat = 46.0
+        let lowerHeight : CGFloat = 50.0
+        
         point.y += radius
-        CGPathAddArcToPoint(path, nil, point.x, point.y, point.x + radius, point.y, CGFloat(M_PI_4))
-        point.x += radius
+        CGPathMoveToPoint(path, nil, point.x, point.y)
+        CGPathAddArcToPoint(path, nil, point.x, point.y, point.x, point.y-radius, radius)
+        point.x += topWith
+        CGPathAddArcToPoint(path, nil, point.x, point.y, point.x+radius, point.y+radius, radius)
         point.y += upperHeight
         CGPathAddLineToPoint(path, nil, point.x, point.y)
-        point.x += topWith
+        switch type {
+        case .Normal:
+            point.x -= ((rect?.size.width)! * 0.2)
+        case .Left:
+            point.x -= (rect?.size.width)! * 0.4
+        default:
+            break
+        }
         CGPathAddLineToPoint(path, nil, point.x, point.y)
-        point.x += topWith
+        point.y += lowerHeight
+        CGPathAddLineToPoint(path, nil, point.x, point.y)
+        point.x -= (rect?.size.width)!
+        CGPathAddLineToPoint(path, nil, point.x, point.y)
+        point.y -= lowerHeight
+        CGPathAddLineToPoint(path, nil, point.x, point.y)
+        switch type {
+        case .Normal:
+            point.x -= ((rect?.size.width)! * 0.2)
+        case .Right:
+            point.x -= (rect?.size.width)! * 0.4
+        default:
+            break
+        }
+        CGPathAddLineToPoint(path, nil, point.x, point.y)
+        point.y -= upperHeight
         CGPathAddLineToPoint(path, nil, point.x, point.y)
         
-        point.x = radius
-        point.y = 0
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
-        
-        let imageSize = CGSizeMake(topWith + radius * 2, upperHeight + radius * 2 + lowerHeight)
+        let imageSize = CGSizeMake(topWith, upperHeight + lowerHeight)
+
         
         UIGraphicsBeginImageContext(imageSize)
         let context = UIGraphicsGetCurrentContext()
+        // 创建色彩空间对象
+        let colorSpaceRef = CGColorSpaceCreateDeviceRGB();
+        // 创建起点颜色
+        let beginColor = CGColorCreate(colorSpaceRef, [0.99, 0.99, 0.99, 1.0]);
+        
+        // 创建终点颜色
+        let endColor = CGColorCreate(colorSpaceRef, [0.95, 0.95, 0.95, 1.0]);
+        let colors: [CGColor] = [beginColor!, endColor!]
+        let colorsPointer = UnsafeMutablePointer<UnsafePointer<Void>>(colors)
+        // 创建颜色数组
+        let colorArray = CFArrayCreate(kCFAllocatorDefault, colorsPointer, 2, nil);
+        
+        // 创建渐变对象
+        let gradientRef = CGGradientCreateWithColors(colorSpaceRef, colorArray, [
+            0.0,       // 对应起点颜色位置
+            1.0        // 对应终点颜色位置
+            ]);
+        
+        CGContextSetLineWidth(context, 2.0)
         CGContextAddPath(context, path)
+        CGContextClip(context)
+        CGContextDrawLinearGradient(context, gradientRef, CGPointMake(0, 0), CGPointMake(0, imageSize.height), CGGradientDrawingOptions.DrawsBeforeStartLocation)
+        CGContextFillPath(context)
         let imageRef = CGBitmapContextCreateImage(context)
-        let imageView = UIImageView(image: UIImage(CGImage: imageRef!))
-        imageView.frame = CGRectMake(((rect?.size.width)! - imageSize.width) / 2, (rect?.height)! - imageSize.height, imageSize.width, imageSize.height)
-        return imageView
+        UIGraphicsEndImageContext()
+        let imageview = UIImageView(image: UIImage(CGImage: imageRef!))
+        switch type {
+        case .Normal:
+            imageview.frame =  CGRectMake(((rect?.size.width)! - imageSize.width) / 2, (rect?.height)! - imageSize.height, imageSize.width, imageSize.height)
+        case .Right:
+            imageview.frame =  CGRectMake((rect?.size.width)! - imageSize.width, (rect?.height)! - imageSize.height, imageSize.width, imageSize.height)
+        case .Left:
+            imageview.frame =  CGRectMake(0, (rect?.height)! - imageSize.height, imageSize.width, imageSize.height)
+        }
+        
+        return imageview
     }
 }
