@@ -21,44 +21,42 @@ protocol SRStockKeyboardDelegate {
 class SRStockKeyboard: UIView, SRStockKeyboardDelegate {
 
     var targetTextField : UITextField?
-    let charKeyboard = SRStockSysKeyboard.sharedSysKeyboard()
+    let charKeyboard = SRStockSysKeyboard.sharedStockSysKeyboard()
     let numKeyboard = SRStockNumKeyboard.sharedNumKeyboard()
     
+    static let stockKeyboard : SRStockKeyboard = {
+        let window = UIApplication.shared.windows[0]
+        let windowFrame = window.bounds
+        let keyboard = SRStockKeyboard(frame: CGRect(x:0, y:(windowFrame.size.height)-216, width:(windowFrame.size.width), height:216))
+        return keyboard;
+    }()
+    
     class func sharedInstance() -> SRStockKeyboard? {
-        struct Singleton {
-            static var token : dispatch_once_t = 0
-            static var keyboard : SRStockKeyboard?
-        }
-        dispatch_once(&Singleton.token) {
-            let window = UIApplication.sharedApplication().windows[0]
-            let windowFrame = window.bounds
-            Singleton.keyboard = SRStockKeyboard(frame: CGRectMake(0, (windowFrame.size.height)-216, (windowFrame.size.width), 216))
-        }
-        return Singleton.keyboard
+        return stockKeyboard
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        charKeyboard?.frame = self.bounds
-        numKeyboard?.frame = self.bounds
+        charKeyboard.frame = self.bounds
+        numKeyboard.frame = self.bounds
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        charKeyboard?.delegate = self
-        charKeyboard?.hidden = true
-        self.addSubview(charKeyboard!)
+        charKeyboard.delegate = self
+        charKeyboard.isHidden = true
+        self.addSubview(charKeyboard)
         
         
-        numKeyboard?.delegate = self
-        self.addSubview(numKeyboard!)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(textViewDidBeginEditing(_:)), name: UITextFieldTextDidBeginEditingNotification, object: nil)
+        numKeyboard.delegate = self
+        self.addSubview(numKeyboard)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(textViewDidBeginEditing(notification:)), name: NSNotification.Name.UITextFieldTextDidBeginEditing, object: nil)
     }
     
     deinit{
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
     func textViewDidBeginEditing(notification : NSNotification) {
@@ -73,12 +71,12 @@ class SRStockKeyboard: UIView, SRStockKeyboardDelegate {
         if targetTextField == nil {
             return
         }
-        targetTextField!.text = targetTextField!.text?.stringByAppendingString(key)
+        targetTextField!.text = targetTextField!.text?.appending(key)
     }
     
     func changeKeyboard() {
-        numKeyboard?.hidden = (charKeyboard?.hidden)!
-        charKeyboard?.hidden = !(charKeyboard?.hidden)!
+        numKeyboard.isHidden = (charKeyboard.isHidden)
+        charKeyboard.isHidden = !(charKeyboard.isHidden)
     }
     
     func clearDidPress() {
@@ -92,7 +90,12 @@ class SRStockKeyboard: UIView, SRStockKeyboardDelegate {
     }
     
     func deleteDidPressed() {
-        
+        let text = targetTextField?.text
+        if text == nil || (text?.isEmpty)!{
+            return
+        }
+        let index = text?.index((text?.endIndex)!, offsetBy: -1)
+        targetTextField?.text = text?.substring(to: index!)
     }
     
     func hideDidPressed() {

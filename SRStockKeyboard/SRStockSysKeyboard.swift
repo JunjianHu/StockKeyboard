@@ -8,10 +8,10 @@
 
 import UIKit
 
-enum KeyPopType {
-    case Normal
-    case Left
-    case Right
+enum KeyPopType : CGFloat {
+    case left = 0
+    case normal = 1
+    case right = 2
 }
 
 let kCharKeys = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -19,77 +19,66 @@ let kCharKeys = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 
 class SRStockSysKeyboard: UIView {
     
+    class func sharedStockSysKeyboard() -> SRStockSysKeyboard {
+        var views = Bundle.main.loadNibNamed("SRStockSysKeyboard", owner: self, options: nil)
+        let stockSysKeyboard = (views?[0] as! SRStockSysKeyboard)
+        return stockSysKeyboard
+    }
+    
     var  delegate : SRStockKeyboardDelegate?
     
     var keyPop : UIImageView?
     
     @IBOutlet var charButtons: [SRStockSysKeyButton]!
     
-    class func sharedSysKeyboard()->SRStockSysKeyboard?{
-        struct Singleton{
-            static var onceToken : dispatch_once_t = 0
-            static var instance : SRStockSysKeyboard?
-        }
-        dispatch_once(&Singleton.onceToken) { 
-            let bundle = NSBundle.mainBundle()
-            var views = bundle.loadNibNamed("SRStockSysKeyboard", owner: self, options: nil)
-            if views.count > 0 {
-                Singleton.instance = views[0] as? SRStockSysKeyboard
-            }
-        }
-        
-        return Singleton.instance
-    }
-    
-    
-    @IBAction func characterPressed(sender: AnyObject) {
+    @IBAction func characterPressed(_ sender: AnyObject) {
         if delegate != nil {
-            delegate?.keyDidPressed(kCharKeys[sender.tag])
+            delegate?.keyDidPressed(key:kCharKeys[sender.tag])
         }
     }
     
-    @IBAction func clearPressed(sender: AnyObject) {
+    @IBAction func clearPressed(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.clearDidPress()
         }
     }
     
-    @IBAction func spacePressed(sender: AnyObject) {
+    @IBAction func spacePressed(_ sender: AnyObject) {
         if delegate != nil {
 //            delegate?.keyDidPressed()
         }
     }
     
-    @IBAction func deletePressed(sender: AnyObject) {
+    @IBAction func deletePressed(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.deleteDidPressed()
         }
     }
 
-    @IBAction func changeKeyboardPressed(sender: AnyObject) {
+    @IBAction func changeKeyboardPressed(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.changeKeyboard()
         }
     }
     
-    @IBAction func searchPressed(sender: AnyObject) {
+    @IBAction func searchPressed(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.searchDidPressed()
         }
     }
    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesBegan(touches, withEvent: event)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         self.touchOnButton(touches)
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesMoved(touches, withEvent: event)
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
         self.touchOnButton(touches)
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesEnded(touches, withEvent: event)
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
         let button = self.buttonOnTouch(touches)
         if button != nil {
             self.characterPressed(button!)
@@ -97,8 +86,8 @@ class SRStockSysKeyboard: UIView {
         self.removeKeyPop()
     }
     
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-        super.touchesCancelled(touches, withEvent: event)
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
         self.removeKeyPop()
     }
     
@@ -109,17 +98,17 @@ class SRStockSysKeyboard: UIView {
         }
     }
     
-    func touchOnButton(touches: Set<UITouch>) {
+    func touchOnButton(_ touches: Set<UITouch>) {
         let button = self.buttonOnTouch(touches)
         if button == nil {
             return
         }
-        self.addPopupToButton(button)
+        self.addPopupToButton(button!)
     }
     
-    func buttonOnTouch(touches: Set<UITouch>) -> UIButton? {
+    func buttonOnTouch(_ touches: Set<UITouch>) -> UIButton? {
         let touch = touches.first
-        let point = touch?.locationInView(self)
+        let point = touch?.location(in: self)
         var button: UIButton?
         for tmpButton in charButtons {
             if tmpButton.frame.contains(point!) {
@@ -130,122 +119,120 @@ class SRStockSysKeyboard: UIView {
         return button
     }
     
-    func addPopupToButton(button : UIButton?) {
-        if keyPop?.tag == button?.tag {
+    func addPopupToButton(_ button : UIButton) {
+        
+        if keyPop?.tag == button.tag {
             return
         }
         self .removeKeyPop()
         
         let textLabel = UILabel()
         
-        if button?.tag == 15 {
-            keyPop = self.createKeyPopImageWithType(KeyPopType.Right, withRect:button?.frame)
-        }else if button?.tag == 16 {
-            keyPop = self.createKeyPopImageWithType(KeyPopType.Left, withRect:button?.frame)
+        if button.tag == 15 {
+            keyPop = self.createKeyPopImageWithType(KeyPopType.right, withRect:button.frame)
+        }else if button.tag == 16 {
+            keyPop = self.createKeyPopImageWithType(KeyPopType.left, withRect:button.frame)
         }else {
-            keyPop = self.createKeyPopImageWithType(KeyPopType.Normal, withRect:button?.frame)
+            keyPop = self.createKeyPopImageWithType(KeyPopType.normal, withRect:button.frame)
         }
         
-        textLabel.text = kCharKeys[(button?.tag)!]
-        textLabel.textAlignment = .Center
-        textLabel.backgroundColor = UIColor.clearColor()
-        textLabel.font = UIFont.systemFontOfSize(44)
-        textLabel.frame = CGRectMake(0, 0, (keyPop?.frame.size.width)!, 70)
+        textLabel.text = kCharKeys[button.tag]
+        textLabel.textAlignment = .center
+        textLabel.backgroundColor = UIColor.clear
+        textLabel.font = UIFont.systemFont(ofSize: 44)
+        textLabel.frame = CGRect(x: 0, y: 0, width: (keyPop?.frame.size.width)!, height: 50)
         
-//        keyPop?.layer.shadowColor = UIColor.whiteColor().colorWithAlphaComponent(1.0).CGColor
-//        keyPop?.layer.shadowOffset = CGSizeMake(0, 2.0)
-//        keyPop?.layer.shadowOpacity = 1
-//        keyPop?.layer.shadowRadius = 1.0
-//        keyPop?.clipsToBounds = true
+        keyPop?.layer.shadowColor = UIColor.black.cgColor
+        keyPop?.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        keyPop?.layer.shadowOpacity = 1
+        keyPop?.layer.shadowRadius = 2.0
+        keyPop?.clipsToBounds = false
         
         keyPop?.addSubview(textLabel)
-        keyPop?.tag = 1
-        button?.addSubview(keyPop!)
+        keyPop?.tag = button.tag
+        self.addSubview(keyPop!)
     }
     
-    func createKeyPopImageWithType(type:KeyPopType, withRect rect:CGRect?) -> UIImageView {
-        let path = CGPathCreateMutable()
-        var point = CGPointZero
+    func createKeyPopImageWithType(_ type:KeyPopType, withRect rect:CGRect) -> UIImageView {
+        let shapLayer = CAShapeLayer()
+        let imageView = UIImageView()
+        let popFrame = CGRect(x:rect.minX-CGFloat(10 * type.rawValue),
+                              y:rect.minY-50,
+                              width:rect.width + 20,
+                              height:rect.height+50)
+        let corner = 5.0 as CGFloat
         
-        let radius: CGFloat = 10.0
-        let topWith : CGFloat = (rect?.size.width)! * 1.4
-        let upperHeight : CGFloat = 46.0
-        let lowerHeight : CGFloat = 50.0
-        
-        point.y += radius
-        CGPathMoveToPoint(path, nil, point.x, point.y)
-        CGPathAddArcToPoint(path, nil, point.x, point.y, point.x, point.y-radius, radius)
-        point.x += topWith
-        CGPathAddArcToPoint(path, nil, point.x, point.y, point.x+radius, point.y+radius, radius)
-        point.y += upperHeight
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
-        switch type {
-        case .Normal:
-            point.x -= ((rect?.size.width)! * 0.2)
-        case .Left:
-            point.x -= (rect?.size.width)! * 0.4
-        default:
-            break
+        let path = CGMutablePath()
+        path.move(to: CGPoint(x:corner, y:corner))
+        path.addArc(center: CGPoint(x:corner, y:corner),
+                    radius: corner,
+                    startAngle: CGFloat(-M_PI),
+                    endAngle: CGFloat(-M_PI_2),
+                    clockwise: false)
+        path.addLine(to: CGPoint(x:popFrame.width-corner, y:0))
+        path.addArc(center: CGPoint(x:popFrame.width - corner, y:corner),
+                    radius: corner,
+                    startAngle: CGFloat(-M_PI_2),
+                    endAngle: CGFloat(0),
+                    clockwise: false)
+        if type != .right {
+            path.addLine(to: CGPoint(x:popFrame.width, y:popFrame.height*0.55))
+            path.addArc(center: CGPoint(x:popFrame.width - corner, y:popFrame.height*0.55 - corner),
+                        radius: corner,
+                        startAngle: CGFloat(0),
+                        endAngle: CGFloat(M_PI_2),
+                        clockwise: false)
+            path.addLine(to: CGPoint(x:popFrame.width - 10 * type.rawValue, y:popFrame.height*0.55))
+            path.addArc(center: CGPoint(x:popFrame.width  - CGFloat(10 * (2 - type.rawValue)) + 5,
+                                        y:popFrame.height*0.55 + corner),
+                        radius: corner,
+                        startAngle: CGFloat(M_PI_2 * 3),
+                        endAngle: CGFloat(M_PI),
+                        clockwise: true)
+            
         }
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
-        point.y += lowerHeight
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
-        point.x -= (rect?.size.width)!
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
-        point.y -= lowerHeight
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
-        switch type {
-        case .Normal:
-            point.x -= ((rect?.size.width)! * 0.2)
-        case .Right:
-            point.x -= (rect?.size.width)! * 0.4
-        default:
-            break
-        }
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
-        point.y -= upperHeight
-        CGPathAddLineToPoint(path, nil, point.x, point.y)
+        path.addLine(to: CGPoint(x:popFrame.width  - 10 * (2 - type.rawValue), y:popFrame.height-corner))
+        path.addArc(center: CGPoint(x:popFrame.width - 10 * (2 - type.rawValue) - corner,
+                                    y:popFrame.height - corner),
+                    radius: corner,
+                    startAngle: CGFloat(0),
+                    endAngle: CGFloat(M_PI_2),
+                    clockwise: false)
         
-        let imageSize = CGSizeMake(topWith, upperHeight + lowerHeight)
+        path.addLine(to: CGPoint(x:(10 * type.rawValue) + corner, y:popFrame.height))
+        path.addArc(center: CGPoint(x:(10 * type.rawValue) + corner, y:popFrame.height - corner),
+                    radius: corner,
+                    startAngle: CGFloat(M_PI_2),
+                    endAngle: CGFloat(M_PI),
+                    clockwise: false)
+        if type != .left {
+            path.addLine(to: CGPoint(x:(10 * type.rawValue), y:popFrame.height*0.55))
+            path.addArc(center: CGPoint(x:(10 * type.rawValue) - corner, y:popFrame.height*0.55 + corner),
+                        radius: corner,
+                        startAngle: CGFloat(0),
+                        endAngle: CGFloat(M_PI_2 * 3),
+                        clockwise: true)
+            path.addLine(to: CGPoint(x:0, y:popFrame.height*0.55))
+            path.addArc(center: CGPoint(x:corner, y:popFrame.height*0.55 - corner),
+                        radius: corner,
+                        startAngle: CGFloat(M_PI_2),
+                        endAngle: CGFloat(M_PI),
+                        clockwise: false)
+        }
+        path.addLine(to: CGPoint(x:0, y:corner))
+        shapLayer.path = path
+        
+        imageView.frame = popFrame
+        
+        let gradient = CAGradientLayer()
+        gradient.frame = CGRect(x:0, y:0, width:popFrame.width, height:popFrame.height)
+        gradient.colors=[UIColor.white.cgColor, UIColor.white.cgColor, UIColor.white.cgColor]
+        gradient.locations=[0.0, 0.618, 1]
+        gradient.startPoint = CGPoint(x:0.5, y:0)
+        gradient.endPoint = CGPoint(x:0.5, y:1)
 
-        
-        UIGraphicsBeginImageContext(imageSize)
-        let context = UIGraphicsGetCurrentContext()
-        // 创建色彩空间对象
-        let colorSpaceRef = CGColorSpaceCreateDeviceRGB();
-        // 创建起点颜色
-        let beginColor = CGColorCreate(colorSpaceRef, [0.99, 0.99, 0.99, 1.0]);
-        
-        // 创建终点颜色
-        let endColor = CGColorCreate(colorSpaceRef, [0.95, 0.95, 0.95, 1.0]);
-        let colors: [CGColor] = [beginColor!, endColor!]
-        let colorsPointer = UnsafeMutablePointer<UnsafePointer<Void>>(colors)
-        // 创建颜色数组
-        let colorArray = CFArrayCreate(kCFAllocatorDefault, colorsPointer, 2, nil);
-        
-        // 创建渐变对象
-        let gradientRef = CGGradientCreateWithColors(colorSpaceRef, colorArray, [
-            0.0,       // 对应起点颜色位置
-            1.0        // 对应终点颜色位置
-            ]);
-        
-        CGContextSetLineWidth(context, 2.0)
-        CGContextAddPath(context, path)
-        CGContextClip(context)
-        CGContextDrawLinearGradient(context, gradientRef, CGPointMake(0, 0), CGPointMake(0, imageSize.height), CGGradientDrawingOptions.DrawsBeforeStartLocation)
-        CGContextFillPath(context)
-        let imageRef = CGBitmapContextCreateImage(context)
-        UIGraphicsEndImageContext()
-        let imageview = UIImageView(image: UIImage(CGImage: imageRef!))
-        switch type {
-        case .Normal:
-            imageview.frame =  CGRectMake(((rect?.size.width)! - imageSize.width) / 2, (rect?.height)! - imageSize.height, imageSize.width, imageSize.height)
-        case .Right:
-            imageview.frame =  CGRectMake((rect?.size.width)! - imageSize.width, (rect?.height)! - imageSize.height, imageSize.width, imageSize.height)
-        case .Left:
-            imageview.frame =  CGRectMake(0, (rect?.height)! - imageSize.height, imageSize.width, imageSize.height)
-        }
-        
-        return imageview
+        imageView.layer.addSublayer(gradient)
+        gradient.mask = shapLayer
+        return imageView
     }
 }

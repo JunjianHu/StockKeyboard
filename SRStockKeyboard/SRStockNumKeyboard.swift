@@ -14,54 +14,44 @@ class SRStockNumKeyboard: UIView {
     
     var  delegate : SRStockKeyboardDelegate?
     
-    class func sharedNumKeyboard()->SRStockNumKeyboard?{
-        struct Singleton{
-            static var onceToken : dispatch_once_t = 0
-            static var instance : SRStockNumKeyboard?
-        }
-        dispatch_once(&Singleton.onceToken) {
-            let bundle = NSBundle.mainBundle()
-            var views = bundle.loadNibNamed("SRStockNumKeyboard", owner: self, options: nil)
-            if views.count > 0 {
-                Singleton.instance = views[0] as? SRStockNumKeyboard
-            }
-        }
-        
-        return Singleton.instance
+    class func sharedNumKeyboard() ->SRStockNumKeyboard{
+        var views = Bundle.main.loadNibNamed("SRStockNumKeyboard", owner: self, options: nil)
+        let numKeyboard = (views?[0] as! SRStockNumKeyboard)
+        return numKeyboard
     }
-
-    @IBAction func keyDidPressed(sender: AnyObject) {
+    
+    @IBAction func keyDidPressed(_ sender: AnyObject) {
         if delegate != nil {
-            delegate?.keyDidPressed(kNumKeys[sender.tag])
+            delegate?.keyDidPressed(key:kNumKeys[sender.tag])
         }
     }
 
-    @IBAction func deleteDidPressed(sender: AnyObject) {
+    @IBAction func deleteDidPressed(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.deleteDidPressed()
         }
     }
     
     
-    @IBAction func hideDidPressed(sender: AnyObject) {
+    @IBAction func hideDidPressed(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.hideDidPressed()
         }
     }
     
-    @IBAction func clearDidPressed(sender: AnyObject) {
+    @IBAction func clearDidPressed(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.clearDidPress()
         }
     }
     
-    @IBAction func changeKeyboard(sender: AnyObject) {
+    @IBAction func changeKeyboard(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.changeKeyboard()
         }
     }
     
-    @IBAction func okDidPressed(sender: AnyObject) {
+    @IBAction func okDidPressed(_ sender: AnyObject) {
         if delegate != nil {
             delegate?.searchDidPressed()
         }

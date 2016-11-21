@@ -19,7 +19,7 @@ class SRStockSysKeyButton: UIButton {
     }
     @IBInspectable var shadowColor: UIColor? {
         didSet {
-            layer.shadowColor = shadowColor?.CGColor
+            layer.shadowColor = shadowColor?.cgColor
         }
     }
     @IBInspectable var shadowOpacity: CGFloat = 0 {
@@ -27,7 +27,7 @@ class SRStockSysKeyButton: UIButton {
             layer.shadowOpacity = 0.5
         }
     }
-    @IBInspectable var shadowOffset: CGSize = CGSizeZero {
+    @IBInspectable var shadowOffset: CGSize = CGSize.zero {
         didSet {
             layer.shadowOffset = shadowOffset;
         }
@@ -38,17 +38,17 @@ class SRStockSysKeyButton: UIButton {
         }
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesBegan(touches, withEvent: event)
-        self.backgroundColor = self.backgroundColor?.colorWithAlphaComponent(0.8)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.backgroundColor = self.backgroundColor?.withAlphaComponent(0.8)
     }
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesEnded(touches, withEvent: event)
-        self.backgroundColor = self.backgroundColor?.colorWithAlphaComponent(1.0)
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        self.backgroundColor = self.backgroundColor?.withAlphaComponent(1.0)
     }
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-        super.touchesCancelled(touches, withEvent: event)
-        self.backgroundColor = self.backgroundColor?.colorWithAlphaComponent(1.0)
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+        self.backgroundColor = self.backgroundColor?.withAlphaComponent(1.0)
     }
     
 }
